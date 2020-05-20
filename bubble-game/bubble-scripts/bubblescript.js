@@ -277,7 +277,7 @@ startbtn.onclick = function draw()
         //bubbles[i].fragments();
       }
 
-      if(bubbles.length>=10)
+      if(bubbles.length>=30)
       {
         timedisp.style.display  = 'block';
         if(time>0)
