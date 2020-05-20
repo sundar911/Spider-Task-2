@@ -1,0 +1,41 @@
+<!DOCTYPE.html>
+	<html>
+		
+		<head>
+			<meta charset=“utf-8”>
+			<title>Bubble game</title>
+			<link href="bubble-styles/bubblestyle.css" rel="stylesheet">
+		</head>
+		
+		<body>			
+			<h1 id='maintitle'>Burst The Bubbles!</h1> 
+			<button class='start' id='start'>START</button>
+			<button class ='instructions' id='instructions'>INSTRUCTIONS</button>
+			<button class='pause' id='pause'>&#9208;</button>
+			<button class='resume' id='resume'>&#9654;&#65039;</button>
+			<button class='lightning' id='lightning'>&#9889;</button>
+			<p class='score' id='score'>SCORE:<span id='myscore'></span></p> 
+			<div class='time' id='time'>TIME:<span id='timer'></span></div>
+			</div>
+			<div class='steps' id='steps'> 
+				<div class = 'steps-content' id='steps-content'> 
+					<span class='close-button' id='close-button'>&times;</span>
+					<p>
+						So here's how you play-
+						<ul>
+							<li>Once you press start bubbles will slowly be generated across your screen</li>
+							<li>Simply click on a bubble to pop it</li>
+							<li>Bubbles will fill your screen up faster as time progresses so keep those fingers ready!</li>
+							<li>When more than three quarters of your screen fills up for more than 10 seconds you lose :/</li>
+							<li>Keep popping bubbles to get points, every bubble carries one point</li>
+							<li>Lightning can be used thrice to eliminate half the bubbles on screen each time it's pressed , but if you do press it more than thrice bubbles will be generated faster with every illegal press
+							</li>
+
+					</p>
+				</div>
+			</div>	
+			<canvas class ='canvas' id='canvas' width='1400' height='600'></canvas>
+ 			<script src="bubble-scripts/bubblescript.js"> </script>
+		</body>
+	
+	</html>
