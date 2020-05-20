@@ -1,4 +1,3 @@
-
 let openbutton = document.getElementById('instructions');
 let closebutton = document.querySelector('.close-button');
 let steps = document.getElementById('steps');
@@ -48,6 +47,7 @@ let endtune = new Audio("bubble-sounds/tf_nemesis.mp3");
 let lightningtune = new Audio("bubble-sounds/its-pikachu_ecUb5Pn.mp3");
 let scoretune = new Audio("bubble-sounds/anime-wow-sound-effect-mp3cut.mp3");
 let cntlightning = 0;
+
 
 window.onload=function first()
 {
@@ -202,6 +202,7 @@ class bubble
 
 }
 
+
 function push(i)
 {
   for(let k=0;k<=i;k++)
@@ -220,8 +221,6 @@ function push(i)
       let b = new bubble(x,y,r,color);
       bubbles.push(b);
   } 
-
-
 }
 
 
@@ -252,14 +251,19 @@ startbtn.onclick = function draw()
           speed-=32;
         else
           speed-=50;
+        
         if(score<10)
-          push(score/3);
+          push(1);
         else if(score>=10 && score<20)
-          push(score/6);
+          push(2);
         else if(score>=20 && score<40)
-          push(score/8);
-        else if(score>40)
-          push(score/10);
+          push(3);
+        else if(score>=40 && score<60)
+          push(4);
+        else if(score>=60 && score<100)
+          push(5);
+        else
+          push(10);
       }
       
       ctx.fillStyle='black';
@@ -347,7 +351,6 @@ startbtn.onclick = function draw()
 
 
 }
-
 
 
 
